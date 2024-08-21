@@ -1,7 +1,10 @@
 import random as rd
 
+# Función para segmentar y encapsular el mensaje
 def segmentar_mensaje(mensaje):
+    # Segmentar el mensaje en paquetes de 10 caracteres
     paquetes = [mensaje[i:i+10] for i in range(0, len(mensaje), 10)]
+    # Agregar un header con el número de secuencia y la longitud del paquete
     paquetes = [(i, len(paquete), paquete) for i, paquete in enumerate(paquetes)]
     return paquetes
 
