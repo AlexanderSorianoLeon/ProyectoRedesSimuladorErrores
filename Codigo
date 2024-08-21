@@ -1,0 +1,6 @@
+import random
+
+def segmentar_mensaje(mensaje):
+    paquetes = [mensaje[i:i+10] for i in range(0, len(mensaje), 10)]
+paquetes = [(i, len(paquete), paquete) for i, paquete in enumerate(paquetes)]
+    return paquetes
