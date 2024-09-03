@@ -102,9 +102,9 @@ def comunicacion_cliente_servidor(mensaje):
     return mensaje_reconstruido, mensaje_error
 
 # Ejecución de la comunicación
-mensaje = input("Ingrese mensaje a enviar: ")
-mensaje_reconstruido, mensaje_error = comunicacion_cliente_servidor(mensaje)
+mensaje = input("Ingrese aqui mensaje a enviar: ")
 
+mensaje_reconstruido, mensaje_error = comunicacion_cliente_servidor(mensaje)
 print("\nMensaje original:", mensaje)
 print("Mensaje recibido:", mensaje_reconstruido)
 print("Mensaje del servidor:", mensaje_error)
